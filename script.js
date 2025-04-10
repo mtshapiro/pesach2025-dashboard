@@ -1,6 +1,7 @@
 
 const zmanimApi = "https://www.hebcal.com/zmanim?cfg=json&geonameid=3201224"; // Grubine, Croatia
 const hebcalEventsApi = "https://www.hebcal.com/shabbat?cfg=json&geonameid=3201224&m=50";
+const hebrewDateApi = "https://www.hebcal.com/converter?cfg=json&gy={GY}&gm={GM}&gd={GD}&g2h=1";
 const scheduleUrl = "pesach2025_schedule.json";
 
 function updateTime() {
@@ -8,6 +9,17 @@ function updateTime() {
     const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
     document.getElementById("time").innerText = now.toLocaleTimeString("en-US", options);
     document.getElementById("date").innerText = now.toDateString();
+
+    const gyear = now.getFullYear();
+    const gmonth = now.getMonth() + 1;
+    const gday = now.getDate();
+    const url = hebrewDateApi.replace("{GY}", gyear).replace("{GM}", gmonth).replace("{GD}", gday);
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("hebrew-date").innerText = "Hebrew Date: " + data.hebrew;
+        });
 }
 setInterval(updateTime, 1000);
 updateTime();
@@ -47,11 +59,9 @@ fetch(hebcalEventsApi)
       const items = data.items;
       const daf = items.find(i => i.category === "daf-yomi");
       const parsha = items.find(i => i.category === "parashat");
-      const hDate = data.heDate || (items.find(i => i.heDate)?.heDate ?? "N/A");
 
       document.getElementById("daf-yomi").innerText = "Daf Yomi: " + (daf?.title || "N/A");
       document.getElementById("parsha").innerText = "Parsha: " + (parsha?.hebrew || "N/A");
-      document.getElementById("hebrew-date").innerText = "Hebrew Date: " + hDate;
   });
 
 fetch(scheduleUrl)

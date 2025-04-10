@@ -5,15 +5,17 @@ body {
     background-color: #0f0f0f;
     color: #f0f0f0;
     overflow: hidden;
+    position: relative;
 }
 
 #bsd {
     position: absolute;
     top: 10px;
-    right: 20px;
-    font-size: 1.7em;
+    right: 25px;
+    font-size: 1.8em;
     color: #f5deb3;
     font-family: 'Georgia', 'David Libre', serif;
+    z-index: 10;
 }
 
 .big-text {
@@ -72,6 +74,11 @@ body {
     background: linear-gradient(to right, #1e1e1e, #2a2a2a);
     border-top: 2px solid #2c2c2c;
     text-align: center;
+}
+
+.bottom-bar h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
 }
 
 ul {
