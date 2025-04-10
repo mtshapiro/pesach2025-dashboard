@@ -9,13 +9,13 @@ body {
 }
 
 #bsd {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: 25px;
-    font-size: 1.8em;
+    right: 20px;
+    font-size: 2em;
     color: #f5deb3;
     font-family: 'Georgia', 'David Libre', serif;
-    z-index: 10;
+    z-index: 9999;
 }
 
 .big-text {
