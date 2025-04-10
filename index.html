@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Pesach 2025 Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jcal-zmanim@latest/dist/jcal-zmanim.min.js"></script>
 </head>
 <body>
+    <div id="bsd">בס״ד</div>
+
     <div class="top-bar">
-        <div id="bsd">בס״ד</div>
-        <div id="time" class="big-text"></div>
-        <div id="date" class="text"></div>
-        <div id="hebrew-date" class="text"></div>
-        <div id="daf-yomi" class="text"></div>
-        <div id="parsha" class="text"></div>
+        <div id="clock" class="text">--:--:--</div>
+        <div id="english-date" class="text">Loading...</div>
+        <div id="hebrew-date" class="text">...</div>
+        <div id="parsha" class="text">Parsha: ...</div>
+        <div id="daf-yomi" class="text">Daf Yomi: ...</div>
     </div>
 
     <div class="main-content">
@@ -24,7 +26,7 @@
         </div>
 
         <div class="center-panel">
-            <img src="IMG_1406.jpeg" alt="Pesach Villa" class="villa-image">
+            <img src="IMG_1406.jpeg" alt="Villa" class="villa-image">
         </div>
 
         <div class="right-panel">
@@ -34,7 +36,7 @@
     </div>
 
     <div class="bottom-bar">
-        <h2>Today's Speakers</h2>
+        <h3>Speakers</h3>
         <ul id="speakers-list"></ul>
     </div>
 
