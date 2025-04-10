@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesach 2025 Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jcal-zmanim@latest/dist/jcal-zmanim.min.js"></script>
+</head>
+<body>
+    
+<div class="top-left">
+  <div id="parsha-left">Parsha/Krias Hatorah: (loading...)</div>
+  <div id="daf-left">Daf Yomi: (loading...)</div>
+</div>
+
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);js.id=id;
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','weatherwidget-io-js');
+</script>
+
+</div>
+<div class="top-right"><div id="mazel-tovs">Mazel Tovs:</div><div id="bsd">בס״ד</div></div>
+
+
+    <div class="top-bar">
+        <div id="clock" class="text">--:--:--</div>
+        <div id="english-date" class="text">Loading...</div>
+        <div id="hebrew-date" class="text">...</div>
+        <div id="parsha" class="text">Parsha: ...</div>
+        <div id="daf-yomi" class="text">Daf Yomi: ...</div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-panel">
+            <h2>Zmanim - Grubine</h2>
+            <ul id="zmanim-list"></ul>
+        </div>
+
+        <div class="center-panel">
+            <img src="IMG_1406.jpeg" alt="Villa" class="villa-image">
+        <div id="speakers-summary">Today's Speakers: (loading...)</div>
+        </div>
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
