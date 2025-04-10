@@ -10,10 +10,10 @@ body {
 
 #bsd {
     position: fixed;
-    top: 10px;
-    right: 20px;
+    top: 8px;
+    right: 35px;
     font-size: 2em;
-    color: #f5deb3;
+    color: #ffffff;
     font-family: 'Georgia', 'David Libre', serif;
     z-index: 9999;
 }

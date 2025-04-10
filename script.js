@@ -17,10 +17,10 @@ function updateTime() {
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            document.getElementById("hebrew-date").innerText = "Hebrew Date: " + data.hebrew;
+            document.getElementById("hebrew-date").innerText = data.hebrew;
         });
 
-    updateZmanim(now); // recalculate zmanim every second
+    updateZmanim(now);
 }
 setInterval(updateTime, 1000);
 updateTime();
