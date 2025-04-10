@@ -1,0 +1,266 @@
+{
+  "2025-04-09": [
+    {
+      "time": "17:00",
+      "event": "Check In"
+    },
+    {
+      "time": "18:30",
+      "event": "Mincha & Dinner"
+    },
+    {
+      "time": "After Dinner",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-10": [
+    {
+      "time": "08:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "10:30",
+      "event": "Bus to Split"
+    },
+    {
+      "time": "18:30",
+      "event": "Mincha & Dinner"
+    },
+    {
+      "time": "After Dinner",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-11": [
+    {
+      "time": "08:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "10:30",
+      "event": "Bus to Imotski & Lakes"
+    },
+    {
+      "time": "13:30",
+      "event": "Lunch at the House"
+    },
+    {
+      "time": "19:10",
+      "event": "Mincha/Kabbalat Shabbat/Maariv"
+    },
+    {
+      "time": "19:11",
+      "event": "Candle Lighting"
+    },
+    {
+      "time": "After Maariv",
+      "event": "Dinner: Reb Zev Levenstien, Rabbanit Dr. Adina Shapiro"
+    },
+    {
+      "time": "21:00",
+      "event": "Games / Tisch"
+    }
+  ],
+  "2025-04-12": [
+    {
+      "time": "07:00",
+      "event": "Shacharit"
+    },
+    {
+      "time": "09:00",
+      "event": "Kiddush (Speaker: HaRav YA Moshel)"
+    },
+    {
+      "time": "13:00",
+      "event": "Lunch / Seudat Shelishit: Sir Uncle Howard Levenstien, HaRav Rafi Shapiro"
+    },
+    {
+      "time": "Following Lunch",
+      "event": "Mincha"
+    },
+    {
+      "time": "20:15",
+      "event": "Maariv"
+    },
+    {
+      "time": "20:45",
+      "event": "Seder Begins"
+    },
+    {
+      "time": "00:51",
+      "event": "Latest Time to Eat Afikoman"
+    }
+  ],
+  "2025-04-13": [
+    {
+      "time": "08:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "13:00",
+      "event": "Lunch: Professor Ariella Levenstien, R\u2019 Moshe Tzvi Shapiro"
+    },
+    {
+      "time": "Following Lunch",
+      "event": "Mincha"
+    },
+    {
+      "time": "20:15",
+      "event": "Maariv"
+    },
+    {
+      "time": "After Maariv",
+      "event": "Dinner: Matzah Pizza Party"
+    }
+  ],
+  "2025-04-14": [
+    {
+      "time": "08:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "13:00",
+      "event": "Lunch"
+    },
+    {
+      "time": "14:30",
+      "event": "Optional Hike"
+    },
+    {
+      "time": "18:00",
+      "event": "Dinner"
+    },
+    {
+      "time": "20:15",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-15": [
+    {
+      "time": "07:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "08:30",
+      "event": "Bus Trip to National Park (TBD)"
+    },
+    {
+      "time": "18:30",
+      "event": "Mincha & Dinner"
+    },
+    {
+      "time": "After Dinner",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-16": [
+    {
+      "time": "07:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "08:30",
+      "event": "Bus Trip to Dubrovnik"
+    },
+    {
+      "time": "18:30",
+      "event": "Mincha & Dinner"
+    },
+    {
+      "time": "After Dinner",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-17": [
+    {
+      "time": "08:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "09:30",
+      "event": "Boat Tour: Ocean / Island Day"
+    },
+    {
+      "time": "18:30",
+      "event": "Mincha & Dinner"
+    },
+    {
+      "time": "After Dinner",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-18": [
+    {
+      "time": "07:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "08:30",
+      "event": "Biokovo Hike"
+    },
+    {
+      "time": "19:18",
+      "event": "Mincha & Maariv"
+    },
+    {
+      "time": "19:20",
+      "event": "Candle Lighting"
+    },
+    {
+      "time": "20:15",
+      "event": "Dinner: Reb Reuven & Morah Meira Shapiro"
+    },
+    {
+      "time": "21:00",
+      "event": "Games / Tisch"
+    }
+  ],
+  "2025-04-19": [
+    {
+      "time": "08:30",
+      "event": "Shacharit"
+    },
+    {
+      "time": "13:00",
+      "event": "Lunch: Amiad Levenstien, Rabenu Yitz Moshel"
+    },
+    {
+      "time": "Following Lunch",
+      "event": "Mincha"
+    },
+    {
+      "time": "18:15",
+      "event": "Seudat Shelishit / Dinner"
+    },
+    {
+      "time": "20:24",
+      "event": "Maariv"
+    }
+  ],
+  "2025-04-20": [
+    {
+      "time": "07:15",
+      "event": "Shacharit"
+    },
+    {
+      "time": "08:15",
+      "event": "Depart for Airport"
+    },
+    {
+      "time": "13:00",
+      "event": "Flight to Germany"
+    },
+    {
+      "time": "19:30",
+      "event": "Flight to Israel"
+    },
+    {
+      "time": "12:00",
+      "event": "Lunch"
+    },
+    {
+      "time": "20:26",
+      "event": "Maariv / Yom Tov Ends"
+    }
+  ]
+}
