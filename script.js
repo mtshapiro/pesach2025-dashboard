@@ -18,6 +18,18 @@ window.onload = function () {
 
     const today = new Date();
     updateZmanim(today);
+// Load Hebrew date, parsha, and daf yomi from local file
+    fetch("hebcal_cache.json")
+      .then(res => res.json())
+      .then(data => {
+        const iso = today.toISOString().split("T")[0];
+        const info = data[iso];
+        if (!info) return;
+
+        if (document.getElementById("hebrew-date")) document.getElementById("hebrew-date").innerText = info.hebrew || "—";
+        if (document.getElementById("parsha")) document.getElementById("parsha").innerText = "Parsha: " + (info.parsha || "—");
+        if (document.getElementById("daf-yomi")) document.getElementById("daf-yomi").innerText = "Daf Yomi: " + (info.daf_yomi || "—");
+      }).catch(err => console.error("Local Hebcal cache load failed", err));
 
     // Fetch Hebrew date, parsha, daf yomi
     fetch(`https://www.hebcal.com/converter?cfg=json&gy=${today.getFullYear()}&gm=${today.getMonth() + 1}&gd=${today.getDate()}&g2h=1`)
@@ -89,3 +101,21 @@ window.onload = function () {
     console.error("Dashboard error:", err);
   }
 };
+
+
+// Load kriat hatorah
+fetch("kriat_hatorah_cache.json")
+  .then(res => res.json())
+  .then(data => {
+    const iso = new Date().toISOString().split("T")[0];
+    const reading = data[iso];
+    if (reading) {
+      const el = document.createElement("div");
+      el.className = "text";
+      el.style.marginTop = "10px";
+      el.style.fontSize = "1.2em";
+      el.style.fontStyle = "italic";
+      el.innerText = "Kriat HaTorah: " + reading;
+      document.querySelector(".top-bar")?.appendChild(el);
+    }
+  }).catch(err => console.error("Failed to load kriat hatorah", err));
