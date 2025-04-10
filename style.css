@@ -10,11 +10,12 @@ body {
 
 #bsd {
     position: fixed;
-    top: 8px;
-    right: 35px;
+    top: 20px;
+    right: 40px;
     font-size: 2em;
-    color: #ffffff;
-    font-family: 'Georgia', 'David Libre', serif;
+    color: #FFD700;
+    font-family: 'David Libre', 'Georgia', serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     z-index: 9999;
 }
 
@@ -92,4 +93,48 @@ li {
     margin-bottom: 10px;
     padding: 5px;
     border-bottom: 1px solid #333;
+}
+
+
+
+.left-panel {
+    background: linear-gradient(to right, #1e1e1e, #2a2a2a);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+}
+
+#zmanim-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#zmanim-list li {
+    padding: 8px 16px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.right-panel {
+    background: linear-gradient(to right, #1e1e1e, #2a2a2a);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+}
+
+#schedule-list, #speakers-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#schedule-list li, #speakers-list li {
+    padding: 8px 16px;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
