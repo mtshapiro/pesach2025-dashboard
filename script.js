@@ -101,3 +101,39 @@ window.onload = function () {
     console.error("Dashboard error:", err);
   }
 };
+
+
+// DEBUG OVERLAY
+const debugBox = document.createElement("div");
+debugBox.style.position = "fixed";
+debugBox.style.bottom = "0";
+debugBox.style.left = "0";
+debugBox.style.backgroundColor = "rgba(0,0,0,0.7)";
+debugBox.style.color = "#0f0";
+debugBox.style.fontSize = "12px";
+debugBox.style.padding = "10px";
+debugBox.style.zIndex = "9999";
+debugBox.style.maxWidth = "100%";
+debugBox.style.maxHeight = "30%";
+debugBox.style.overflowY = "auto";
+debugBox.style.fontFamily = "monospace";
+debugBox.innerText = "[Debug Log]\n";
+document.body.appendChild(debugBox);
+
+function logDebug(msg) {
+  console.log(msg);
+  debugBox.innerText += msg + "\n";
+}
+
+// Hook into key points
+logDebug("JS loaded.");
+logDebug("Today ISO: " + new Date().toISOString().split("T")[0]);
+logDebug("Hebcal cache keys: " + Object.keys(hebcalCache).join(", "));
+logDebug("Zmanim cache keys: " + Object.keys(zmanimCache).join(", "));
+logDebug("Kriat HaTorah cache keys: " + Object.keys(kriatHatorahCache).join(", "));
+
+// Show which data was actually found
+const isoCheck = new Date().toISOString().split("T")[0];
+logDebug("Found in hebcalCache? " + (isoCheck in hebcalCache));
+logDebug("Found in zmanimCache? " + (isoCheck in zmanimCache));
+logDebug("Found in kriatHatorahCache? " + (isoCheck in kriatHatorahCache));
