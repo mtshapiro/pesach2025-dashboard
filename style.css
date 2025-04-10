@@ -1,26 +1,38 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #111;
-    color: #fff;
+    font-family: 'Segoe UI', 'Noto Sans Hebrew', sans-serif;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
     overflow: hidden;
 }
 
+#bsd {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.7em;
+    color: #f5deb3;
+    font-family: 'Georgia', 'David Libre', serif;
+}
+
 .big-text {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .text {
     font-size: 1.5em;
+    color: #cccccc;
 }
 
 .top-bar {
     text-align: center;
     padding: 20px;
-    border-bottom: 2px solid #444;
-    background-color: #1e1e1e;
+    border-bottom: 2px solid #2c2c2c;
+    background: linear-gradient(to right, #1e1e1e, #2a2a2a);
+    position: relative;
 }
 
 .main-content {
@@ -29,15 +41,17 @@ body {
     align-items: flex-start;
     padding: 20px;
     height: 70vh;
+    gap: 20px;
 }
 
 .left-panel, .right-panel {
     width: 25%;
     height: 100%;
     overflow-y: auto;
-    padding: 10px;
-    background-color: #222;
-    border-radius: 8px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00000066;
 }
 
 .center-panel {
@@ -48,23 +62,27 @@ body {
 .villa-image {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     object-fit: cover;
+    box-shadow: 0 0 20px #00000099;
 }
 
 .bottom-bar {
     padding: 20px;
-    background-color: #1e1e1e;
-    border-top: 2px solid #444;
+    background: linear-gradient(to right, #1e1e1e, #2a2a2a);
+    border-top: 2px solid #2c2c2c;
     text-align: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: #dddddd;
 }
 
 li {
     margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #333;
 }

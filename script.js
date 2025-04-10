@@ -1,11 +1,11 @@
 
-const zmanimApi = "https://www.hebcal.com/zmanim?cfg=json&geonameid=3201224";
+const zmanimApi = "https://www.hebcal.com/zmanim?cfg=json&geonameid=3201224"; // Grubine, Croatia
 const hebcalEventsApi = "https://www.hebcal.com/shabbat?cfg=json&geonameid=3201224&m=50";
 const scheduleUrl = "pesach2025_schedule.json";
 
 function updateTime() {
     const now = new Date();
-    const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+    const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
     document.getElementById("time").innerText = now.toLocaleTimeString("en-US", options);
     document.getElementById("date").innerText = now.toDateString();
 }
@@ -47,9 +47,11 @@ fetch(hebcalEventsApi)
       const items = data.items;
       const daf = items.find(i => i.category === "daf-yomi");
       const parsha = items.find(i => i.category === "parashat");
+      const hDate = data.heDate || (items.find(i => i.heDate)?.heDate ?? "N/A");
+
       document.getElementById("daf-yomi").innerText = "Daf Yomi: " + (daf?.title || "N/A");
       document.getElementById("parsha").innerText = "Parsha: " + (parsha?.hebrew || "N/A");
-      document.getElementById("hebrew-date").innerText = "Hebrew Date: " + (data.heDate || "N/A");
+      document.getElementById("hebrew-date").innerText = "Hebrew Date: " + hDate;
   });
 
 fetch(scheduleUrl)
@@ -63,7 +65,7 @@ fetch(scheduleUrl)
       speakersList.innerHTML = '';
 
       const speakerKeywords = [
-          "R’", "Rabbi", "Reb", "HaRav", "Shapiro", "Levenstien", "Speaker", "Dr.", "Professor", "Uncle", "Morah"
+          "R’", "Rabbi", "Reb", "HaRav", "Shapiro", "Levenstien", "Speaker", "Dr.", "Professor", "Uncle", "Morah", "הרב", "רבנו"
       ];
 
       todaysEvents.forEach(event => {
@@ -71,7 +73,9 @@ fetch(scheduleUrl)
           li.textContent = `${event.time} — ${event.event}`;
           scheduleList.appendChild(li);
 
-          const isSpeaker = speakerKeywords.some(keyword => event.event.includes(keyword));
+          const isSpeaker = speakerKeywords.some(keyword =>
+              event.event.toLowerCase().includes(keyword.toLowerCase())
+          );
           if (isSpeaker) {
               const sp = document.createElement("li");
               sp.textContent = event.event;
