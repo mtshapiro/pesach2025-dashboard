@@ -1,0 +1,147 @@
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Georgia, serif;
+  background-color: #0f0f0f;
+  color: #f8f8f8;
+  overflow: hidden;
+}
+
+/* HEADER & CLOCK */
+.top-bar {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+#clock {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+#english-date, #hebrew-date {
+  font-size: 1.5em;
+  color: #ccc;
+}
+
+/* TOP LEFT / RIGHT */
+.top-left, .top-right {
+  position: absolute;
+  font-size: 1.2em;
+  color: #fff;
+}
+.top-left {
+  top: 20px;
+  left: 30px;
+  text-align: left;
+}
+.top-right {
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+#bsd {
+  font-size: 1.8em;
+  font-family: 'Times New Roman', serif;
+  color: gold;
+}
+#weather-widget {
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  font-size: 1em;
+  color: #aaa;
+}
+
+/* MAIN LAYOUT */
+.main-content {
+  display: flex;
+  height: calc(100vh - 150px);
+  padding: 20px;
+  gap: 20px;
+}
+.left-panel, .right-panel {
+  flex: 1;
+  background: linear-gradient(to bottom, #1c1c1c, #2a2a2a);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  padding: 20px;
+  overflow-y: auto;
+}
+.left-panel h2, .right-panel h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.6em;
+}
+li {
+  margin-bottom: 4px;
+}
+
+/* CENTER PANEL */
+.center-panel {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.villa-image {
+  width: 100%;
+  max-height: 50vh;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+#speakers-summary {
+  font-size: 1.2em;
+  text-align: center;
+  color: #ddd;
+}
+
+#mazel-tovs {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f0f0f0;
+}
+
+
+.text {
+  font-family: 'Georgia', serif;
+  color: #f5f5f5;
+}
+
+ul#zmanim-list li,
+ul#schedule-list li {
+  font-size: 1.05em;
+  padding: 2px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+h2 {
+  font-weight: 600;
+  color: gold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#speakers-summary {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #f0e68c;
+}
+
+#clock {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(255,255,255,0.2);
+}
