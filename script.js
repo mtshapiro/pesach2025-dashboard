@@ -510,8 +510,23 @@ window.onload = function () {
     if (zmanimList && zmanimCache[iso]) {
       zmanimList.innerHTML = '';
       for (const [label, time] of Object.entries(zmanimCache[iso])) {
+
+        let finalLabel = label;
+
+        if (label === "Alot Hashachar") finalLabel = "Alos Hashachar";
+        if (label === "Sof Zman Shema") finalLabel = "Sof Zman Krias Shema";
+        if (label === "Sof Zman Tefillah") finalLabel = "Sof Zman Tefilah";
+        if (label === "Chatzot") finalLabel = "Chatzos";
+        if (label === "Chatzot Halayla") finalLabel = "Chatzos Halayla";
+        if (label === "Mincha Gedola") finalLabel = "Mincha Gedolah";
+        if (label === "Mincha Ketana") finalLabel = "Mincha Ketanah";
+        if (label === "Plag Hamincha") finalLabel = "Plag Hamincha";
+        if (label === "Hadlakas Neiros") finalLabel = "Hadlakas Neiros";
+        if (label === "Sunrise") finalLabel = "Hanetz Hachamah";
+        if (label === "Sunset") finalLabel = "Shkiah";
+        if (label === "Tzeit") finalLabel = "Tzeis Hakochavim";
         const li = document.createElement("li");
-        li.textContent = `${label}: ${time}`;
+        li.textContent = `${finalLabel}: ${time}`;
         if (label.includes("Sefirat") || label.includes("Candle") || label.includes("Yom Tov") || label.includes("Chametz")) {
           li.style.color = "#FFD700";
         }

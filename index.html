@@ -1,52 +1,46 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Pesach 2025 Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css?v=1.1">
-    <script src="https://cdn.jsdelivr.net/npm/jcal-zmanim@latest/dist/jcal-zmanim.min.js"></script>
+<meta charset="utf-8"/>
+<title>Pesach 2025 Dashboard</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="style.css?v=1.1" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/jcal-zmanim@latest/dist/jcal-zmanim.min.js"></script>
 </head>
 <body>
-
 <div class="top-left parsha-daf-box" style="display: flex; flex-direction: column;">
-  <div id="parsha-left" class="parsha-daf">Parsha/Krias HaTorah: (loading...)</div>
-  <div id="daf-left" class="parsha-daf">Daf Yomi: (loading...)</div>
+<div class="parsha-daf" id="parsha-left"><strong>Parsha/Krias HaTorah:</strong> (loading...)</div>
+<div class="parsha-daf" id="daf-left"><strong>Daf Yomi:</strong> (loading...)</div>
 </div>
-
 <div class="top-right">
-  <div class="mazel-box">
-    <div class="mazel-title">Mazel Tov's</div>
-    <div id="mazel-tovs-text"></div>
-  </div>
-  <div id="bsd">בס״ד</div>
-</div>
+<div class="mazel-box">
 
+<div id="mazel-tovs-text"><strong>Mazel Tov's</strong><br/><span style="font-weight: normal;">Mazel Tov to Meira and Moshe Tzvi Shapiro on their upcoming wedding</span></div>
+</div>
+<div id="bsd">בס״ד</div>
+</div>
 <div class="top-bar">
-    <div id="clock" class="text">--:--:--</div>
-    <div id="english-date" class="text">Loading...</div>
-    <div id="hebrew-date" class="text" dir="rtl">...</div>
+<div class="text" id="clock">--:--:--</div>
+<div class="text" id="english-date">Loading...</div>
+<div class="text" dir="rtl" id="hebrew-date">...</div>
 </div>
-
 <div class="main-content">
-    <div class="left-panel">
-        <h2>Zmanim</h2>
-        <ul id="zmanim-list"></ul>
-    </div>
-
-    <div class="center-panel">
-        <img src="IMG_1406.jpeg" alt="Villa" class="villa-image">
-        <h2 id="speakers-title">Today's Speakers</h2>
-        <ul id="speakers-list"></ul>
-    </div>
-
-    <div class="right-panel">
-        <h2>Schedule</h2>
-        <ul id="schedule-list"></ul>
-    </div>
+<div class="left-panel">
+<h2>Zmanim</h2>
+<ul id="zmanim-list"></ul>
 </div>
-
+<div class="center-panel" style="flex: 0 0 40%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 15px;">
+<img alt="Image" class="main-image" src="IMG_1406.jpeg" style="width: 90%; max-height: 70vh; border-radius: 15px; object-fit: cover; box-shadow: 0 0 15px rgba(0,0,0,0.7);"/>
+<h2 id="speakers-title">Today's Speakers</h2>
+<ul id="speakers-list"></ul>
+</div>
+<div class="right-panel">
+<h2>Schedule</h2>
+<ul id="schedule-list"></ul>
+</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
