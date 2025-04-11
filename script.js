@@ -491,7 +491,14 @@ window.onload = function () {
 
     const heb = hebcalCache[iso];
     if (heb) {
-      if (document.getElementById("hebrew-date")) document.getElementById("hebrew-date").innerText = heb.hebrew;
+      
+    const hebrewReplacements = {'Yud-Gimel Nisan 5785': 'י״ג ניסן תשפ״ה', 'Yud-Daled Nisan 5785': 'י״ד ניסן תשפ״ה', 'Tes-Vov Nisan 5785': 'ט״ו ניסן תשפ״ה', 'Tes-Zayin Nisan 5785': 'ט״ז ניסן תשפ״ה', 'Yud-Zayin Nisan 5785': 'י״ז ניסן תשפ״ה', 'Yud-Ches Nisan 5785': 'י״ח ניסן תשפ״ה', 'Yud-Tes Nisan 5785': 'י״ט ניסן תשפ״ה', 'Chof Nisan 5785': 'כ׳ ניסן תשפ״ה', 'Chof-Alef Nisan 5785': 'כ״א ניסן תשפ״ה', 'Chof-Beis Nisan 5785': 'כ״ב ניסן תשפ״ה'};
+
+    if (heb && heb.hebrew && document.getElementById("hebrew-date")) {
+      const realHebrew = hebrewReplacements[heb.hebrew] || heb.hebrew;
+      document.getElementById("hebrew-date").innerText = realHebrew;
+    }
+
       if (document.getElementById("parsha")) document.getElementById("parsha").innerText = "Parsha/Krias HaTorah: " + (heb.parsha_krias || "—");
       if (document.getElementById("daf-yomi")) document.getElementById("daf-yomi").innerText = "Daf Yomi: " + heb.daf_yomi;
       const parshaBox = document.getElementById("parsha-summary");

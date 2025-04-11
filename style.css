@@ -145,3 +145,57 @@ h2 {
   color: white;
   text-shadow: 2px 2px 6px rgba(255,255,255,0.2);
 }
+
+
+.top-center {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.top-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-align: right;
+}
+
+#mazel-tovs {
+  font-size: 1.1em;
+  margin-bottom: 4px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f0f0f0;
+}
+
+#parsha-left,
+#daf-left {
+  margin-bottom: 5px;
+}
+
+#hebrew-date {
+  font-family: 'Noto Sans Hebrew', 'David Libre', serif;
+  font-size: 1.3em;
+}
+
+#speakers-summary {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f0e68c;
+}
