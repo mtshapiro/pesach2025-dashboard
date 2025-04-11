@@ -499,8 +499,8 @@ window.onload = function () {
       document.getElementById("hebrew-date").innerText = realHebrew;
     }
 
-      if (document.getElementById("parsha")) document.getElementById("parsha").innerText = "Parsha/Krias HaTorah: " + (heb.parsha_krias || "—");
-      if (document.getElementById("daf-yomi")) document.getElementById("daf-yomi").innerText = "Daf Yomi: " + heb.daf_yomi;
+      if (document.getElementById("parsha-left")) document.getElementById("parsha-left").innerText = "Parsha/Krias HaTorah: " + (heb.parsha_krias || "—");
+      if (document.getElementById("daf-left")) document.getElementById("daf-left").innerText = "Daf Yomi: " + heb.daf_yomi;
       const parshaBox = document.getElementById("parsha-summary");
       if (parshaBox && heb.parsha) parshaBox.innerText = "Parsha: " + heb.parsha;
     }

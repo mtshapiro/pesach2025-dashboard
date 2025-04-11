@@ -28,6 +28,9 @@ body {
 
 /* TOP LEFT / RIGHT */
 .top-left, .top-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
   position: absolute;
   font-size: 1.2em;
   color: #fff;
@@ -38,6 +41,9 @@ body {
   text-align: left;
 }
 .top-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
   top: 20px;
   right: 20px;
   text-align: right;
@@ -165,13 +171,15 @@ h2 {
 }
 
 .top-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
   position: absolute;
   top: 20px;
   right: 30px;
   text-align: right;
 }
 
-#mazel-tovs {
   font-size: 1.1em;
   margin-bottom: 4px;
   padding: 4px 10px;
