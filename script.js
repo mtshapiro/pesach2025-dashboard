@@ -239,7 +239,7 @@ const pesachSchedule = {
     },
     {
       "time": "19:10",
-      "event": "Mincha/Kabbolas Shabbos/Ma'ariv"
+      "event": "Mincha/Kabbalas Shabbos/Ma'ariv"
     },
     {
       "time": "19:11",
@@ -592,5 +592,10 @@ window.onload = function () {
 
 // Set Mazel Tovs Message
 const mazelTovMessage = "Mazel Tov to Meira and Moshe Tzvi Shapiro on their upcoming wedding";
-const mazelBox = document.getElementById("mazel-tovs-text");
 if (mazelBox) mazelBox.innerText = mazelTovMessage;
+// Set Mazel Tovs Message
+window.addEventListener('DOMContentLoaded', () => {
+  const mazelTovMessage = "Mazel Tov to Meira and Moshe Tzvi Shapiro on their upcoming wedding";
+  const mazelBox = document.getElementById("mazel-tovs-text");
+  if (mazelBox) mazelBox.innerText = mazelTovMessage;
+});
