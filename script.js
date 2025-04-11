@@ -78,7 +78,7 @@ const zmanimCache = {
     "Sunset": "19:17",
     "Tzeit": "19:45",
     "Chatzot Halayla": "00:46",
-    "Candle Lighting": "19:11"
+    "Hadlakas Neiros": "19:11"
   },
   "2025-04-12": {
     "Alot Hashachar": "04:45",
@@ -179,7 +179,7 @@ const zmanimCache = {
     "Sunset": "19:24",
     "Tzeit": "19:52",
     "Chatzot Halayla": "00:45",
-    "Candle Lighting": "19:20",
+    "Hadlakas Neiros": "19:20",
     "Sefirat HaOmer": "Day 7"
   },
   "2025-04-19": {
@@ -227,7 +227,7 @@ const pesachSchedule = {
   "2025-04-11": [
     {
       "time": "08:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "10:30",
@@ -239,15 +239,15 @@ const pesachSchedule = {
     },
     {
       "time": "19:10",
-      "event": "Mincha/Kabbalat Shabbat/Maariv"
+      "event": "Mincha/Kabbolas Shabbos/Ma'ariv"
     },
     {
       "time": "19:11",
-      "event": "Candle Lighting"
+      "event": "Hadlakas Neiros"
     },
     {
-      "time": "After Maariv",
-      "event": "Dinner: Reb Zev Levenstien, Rabbanit Dr. Adina Shapiro"
+      "time": "After Ma'ariv",
+      "event": "Dinner: Reb Zev Levenstein, Rabbanit Dr. Adina Shapiro"
     },
     {
       "time": "21:00",
@@ -257,7 +257,7 @@ const pesachSchedule = {
   "2025-04-12": [
     {
       "time": "07:00",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "09:00",
@@ -265,7 +265,7 @@ const pesachSchedule = {
     },
     {
       "time": "13:00",
-      "event": "Lunch / Seudat Shelishit: Sir Uncle Howard Levenstien, HaRav Rafi Shapiro"
+      "event": "Lunch / Shalosh Seudos: Sir Uncle Howard Levenstein, HaRav Rafi Shapiro"
     },
     {
       "time": "Following Lunch",
@@ -273,7 +273,7 @@ const pesachSchedule = {
     },
     {
       "time": "20:15",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     },
     {
       "time": "20:45",
@@ -281,17 +281,17 @@ const pesachSchedule = {
     },
     {
       "time": "00:51",
-      "event": "Latest Time to Eat Afikoman"
+      "event": "Latest Time to Eat Afikoymen"
     }
   ],
   "2025-04-13": [
     {
       "time": "08:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "13:00",
-      "event": "Lunch: Professor Ariella Levenstien, R’ Moshe Tzvi Shapiro"
+      "event": "Lunch: Professor Ariella Levenstein, R’ Moshe Tzvi Shapiro"
     },
     {
       "time": "Following Lunch",
@@ -299,17 +299,17 @@ const pesachSchedule = {
     },
     {
       "time": "20:15",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     },
     {
-      "time": "After Maariv",
+      "time": "After Ma'ariv",
       "event": "Dinner: Matzah Pizza Party"
     }
   ],
   "2025-04-14": [
     {
       "time": "08:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "13:00",
@@ -325,13 +325,13 @@ const pesachSchedule = {
     },
     {
       "time": "20:15",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     }
   ],
   "2025-04-15": [
     {
       "time": "07:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "08:30",
@@ -343,13 +343,13 @@ const pesachSchedule = {
     },
     {
       "time": "After Dinner",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     }
   ],
   "2025-04-16": [
     {
       "time": "07:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "08:30",
@@ -361,13 +361,13 @@ const pesachSchedule = {
     },
     {
       "time": "After Dinner",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     }
   ],
   "2025-04-17": [
     {
       "time": "08:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "09:30",
@@ -379,13 +379,13 @@ const pesachSchedule = {
     },
     {
       "time": "After Dinner",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     }
   ],
   "2025-04-18": [
     {
       "time": "07:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "08:30",
@@ -393,11 +393,11 @@ const pesachSchedule = {
     },
     {
       "time": "19:18",
-      "event": "Mincha & Maariv"
+      "event": "Mincha & Ma'ariv"
     },
     {
       "time": "19:20",
-      "event": "Candle Lighting"
+      "event": "Hadlakas Neiros"
     },
     {
       "time": "20:15",
@@ -411,11 +411,11 @@ const pesachSchedule = {
   "2025-04-19": [
     {
       "time": "08:30",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "13:00",
-      "event": "Lunch: Amiad Levenstien, Rabenu Yitz Moshel"
+      "event": "Lunch: Amiad Levenstein, Rabenu Yitz Moshel"
     },
     {
       "time": "Following Lunch",
@@ -423,17 +423,17 @@ const pesachSchedule = {
     },
     {
       "time": "18:15",
-      "event": "Seudat Shelishit / Dinner"
+      "event": "Shalosh Seudos / Dinner"
     },
     {
       "time": "20:24",
-      "event": "Maariv"
+      "event": "Ma'ariv"
     }
   ],
   "2025-04-20": [
     {
       "time": "07:15",
-      "event": "Shacharit"
+      "event": "Shacharis"
     },
     {
       "time": "08:15",
@@ -453,7 +453,7 @@ const pesachSchedule = {
     },
     {
       "time": "20:26",
-      "event": "Maariv / Yom Tov Ends"
+      "event": "Ma'ariv / Yom Tov Ends"
     }
   ]
 };
@@ -538,7 +538,7 @@ window.onload = function () {
     
     const todaysEvents = pesachSchedule[iso] || [];
     const speakerKeywords = [
-      "R’", "Rabbi", "Reb", "HaRav", "Shapiro", "Levenstien", "Speaker",
+      "R’", "Rabbi", "Reb", "HaRav", "Shapiro", "Levenstein", "Speaker",
       "Dr.", "Professor", "Uncle", "Morah", "הרב", "רבנו"
     ];
     const detected = new Set();

@@ -240,3 +240,15 @@ h2 {
   color: #fffacd;
   line-height: 1.4em;
 }
+
+.mazel-title {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 5px;
+}
+
+#mazel-tovs-text {
+  font-size: 1em;
+  color: white;
+  line-height: 1.4em;
+}
