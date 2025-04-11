@@ -564,9 +564,18 @@ window.onload = function () {
     });
 
     // Display speaker summary under image
-    const summaryBox = document.getElementById("speakers-summary");
-    if (summaryBox && detected.size > 0) {
-      summaryBox.innerText = "Today's Speakers: " + Array.from(detected).join(", ");
+    const speakersList = document.getElementById("speakers-list");
+    const speakersTitle = document.getElementById("speakers-title");
+
+    if (speakersList && detected.size > 0) {
+      speakersList.innerHTML = "";
+      Array.from(detected).forEach(name => {
+        const li = document.createElement("li");
+        li.textContent = name;
+        speakersList.appendChild(li);
+      });
+    } else if (speakersTitle) {
+      speakersTitle.style.display = "none";
     }
   } catch (err) {
     console.error("Dashboard error:", err);
@@ -580,3 +589,8 @@ window.onload = function () {
       li.style.fontStyle = "italic";
       zmanimList.appendChild(li);
     }
+
+// Set Mazel Tovs Message
+const mazelTovMessage = "Mazel Tov to Meira and Moshe Tzvi Shapiro on their upcoming wedding";
+const mazelBox = document.getElementById("mazel-tovs-text");
+if (mazelBox) mazelBox.innerText = mazelTovMessage;

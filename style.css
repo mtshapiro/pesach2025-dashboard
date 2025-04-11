@@ -207,3 +207,36 @@ h2 {
   font-weight: bold;
   color: #f0e68c;
 }
+.parsha-daf-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  max-width: 300px;
+}
+
+.parsha-daf {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f8f8f8;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  margin-bottom: 6px;
+}
+
+#clock {
+  font-size: 4.5em;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(255,255,255,0.2);
+}
+
+.mazel-title {
+  font-size: 1.2em;
+  color: gold;
+  margin-bottom: 5px;
+}
+
+#mazel-tovs-text {
+  font-size: 1em;
+  color: #fffacd;
+  line-height: 1.4em;
+}
